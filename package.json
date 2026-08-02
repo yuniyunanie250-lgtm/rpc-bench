@@ -1,0 +1,17 @@
+{
+  "name": "rpc-bench",
+  "version": "0.1.0",
+  "description": "Measure p50/p95 latency and error rates across JSON-RPC endpoints before you pick one",
+  "type": "module",
+  "bin": { "rpc-bench": "./src/cli.mjs" },
+  "exports": "./src/bench.mjs",
+  "files": ["src"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "test": "node --test test/"
+  },
+  "keywords": ["json-rpc", "ethereum", "benchmark", "latency", "p95"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/yuniyunanie250-lgtm/rpc-bench.git" }
+}
